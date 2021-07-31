@@ -1,0 +1,20 @@
+{
+    "name": "AEM Cloud Service - Environment Label",
+    "description": "Displays the name of the Environment the Author is accessing",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://author-p24704-e76433.adobeaemcloud.com/*"],
+            "js": ["wknd.js"]
+        },
+        {
+            "matches": ["https://author-p42252-e163707.adobeaemcloud.com/*"],
+            "js": ["apacdemo.js"]
+        },
+        {
+            "matches": ["https://author-p31363-e105601.adobeaemcloud.com/*"],
+            "js": ["nevarro.js"]
+        }
+      ]
+  }
