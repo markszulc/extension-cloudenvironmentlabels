@@ -1,7 +1,7 @@
 {
     "name": "AEM Cloud Service - Environment Label",
     "description": "Displays the name of the Environment the Author is accessing",
-    "version": "1.1",
+    "version": "1.2",
     "manifest_version": 3,
     "content_scripts": [
         {
@@ -15,6 +15,10 @@
         {
             "matches": ["https://author-p31363-e105601.adobeaemcloud.com/*"],
             "js": ["nevarro.js"]
+        },
+        {
+            "matches": ["https://author-p47527-e236969.adobeaemcloud.com/*"],
+            "js": ["scarif.js"]
         }
       ]
   }
